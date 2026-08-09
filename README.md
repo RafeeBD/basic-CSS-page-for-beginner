@@ -15,8 +15,6 @@ A beginner-friendly collection of fundamental CSS concepts, layout techniques, p
 ---
 
 
-```
-
 
 ##  How to View
 
