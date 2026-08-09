@@ -19,7 +19,8 @@ A beginner-friendly collection of fundamental CSS concepts, layout techniques, p
 ```text
 basic-CSS-page-for-beginner/
 ├── src/
-│   └── index.html    # Core HTML & CSS practice file
+│   ├── index.html    # Core HTML & CSS practice file
+│   └── mbp.jpg       # Margin, Border, & Padding Diagram Image
 └── README.md         # Project documentation
 ```
 
