@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS</title>
+    <style>
+        #id1 {
+            background-color: blue;
+            font-family: 'Times New Roman', Times, serif;
+            color: aquamarine;
+        }
+
+        .class1 {
+            background-color: black;
+            color: rgb(157, 255, 29);
+        }
+
+        #box {
+            width: 500px;
+            height: 500px;
+            margin: 150px;
+            border: 50px solid red;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #h1 {
+            background-color: blue;
+            text-align: end;
+        }
+
+        #h2 {
+            background-color: red;
+            text-align: start;
+        }
+
+        #div0 {
+            background-color: yellow;
+            text-align: center;
+        }
+
+        #div2 {
+            margin: auto;
+            width: 600px;
+            height: 100px;
+            background-color: orange;
+            text-align: center;
+        }
+
+        #s1 {
+            background-color: red;
+        }
+
+        #s2 {
+            background-color: green;
+        }
+
+        #s3 {
+            background-color: blue;
+            display: inline-block;
+        }
+
+        #divspan {
+            background-color: rgb(60, 129, 129);
+            margin: auto;
+            width: 500px;
+            height: 150px;
+            position: relative;
+        }
+
+        #spani {
+            position: static;
+            top: 20px;
+            left: 20px;
+            background-color: brown;
+            color: white;
+        }
+
+        #spanii {
+            position: relative;
+            top: 15px;
+            left: 20px;
+            background-color: green;
+            color: white;
+        }
+
+        #spaniii {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+        }
+
+        #spaniv {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: purple;
+            color: white;
+        }
+
+        #spanivv {
+            position: sticky;
+            top: 0;
+            background-color: orange;
+            color: black;
+        }
+
+        #overflow1 {
+            width: 250px;
+            height: 80px;
+            border: 2px solid black;
+            margin: 20px 0;
+            padding: 10px;
+            overflow: visible;
+        }
+
+        #overflow2 {
+            width: 250px;
+            height: 80px;
+            border: 2px solid black;
+            margin: 20px 0;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        #overflow3 {
+            width: 250px;
+            height: 80px;
+            border: 2px solid black;
+            margin: 20px 0;
+            padding: 10px;
+            overflow: scroll;
+        }
+
+        #overflow4 {
+            width: 250px;
+            height: 80px;
+            border: 2px solid black;
+            margin: 20px 0;
+            padding: 10px;
+            overflow: auto;
+        }
+
+        #overflow5 {
+            width: 250px;
+            height: 80px;
+            border: 2px solid black;
+            margin: 20px 0;
+            padding: 10px;
+            overflow: clip;
+        }
+
+        #Fbox {
+            background-color: rgb(27, 143, 151);
+            margin: 10px;
+            margin-top: 150px;
+            margin-bottom: 50px;
+            height: 150px;
+            width: 500px;
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: wrap-reverse;
+        }
+
+        #Fspan1,
+        #Fspan2,
+        #Fspan3,
+        #Fspan4 {
+            background-color: green;
+            color: white;
+            margin: 5px;
+        }
+
+        #Fdiv {
+            background-color: blue;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .grid {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .grid:first-child {
+            grid-column: span 3;
+        }
+
+        .grid:nth-child(5) {
+            background-color: green;
+            grid-column: span 2;
+        }
+
+        .grid:last-child {
+            grid-column: span 4;
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="background-color: red;">Inline CSS</h1>
+    <h2 id="id1">this is id</h2>
+
+    <h3 class="class1">class</h3>
+    <h3 class="class1">class</h3>
+    <h3 class="class1">class</h3>
+
+    <img src="../mbp.jpg" alt="MBP Image">
+
+    <div id="box">Content</div>
+
+    <h1 id="h1">Header Text</h1>
+    <h1 id="h2">Header Text</h1>
+
+    <div id="div0">div0 text</div>
+
+    <div id="div2">
+        <p>div1text</p>
+        <span id="s1"> span1</span>
+        <span id="s2"> span2</span>
+        <span id="s3"> span3</span>
+    </div>
+
+    <div id="divspan">
+        <span id="spani">span1</span>
+        <span id="spanii">span2</span>
+        <span id="spaniii">span3</span>
+        <span id="spaniv">span4</span>
+        <span id="spanivv">span5</span>
+    </div>
+
+    <h2>CSS Overflow Property Examples</h2>
+
+    <h3>1. Overflow: Visible</h3>
+    <div id="overflow1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus doloribus quaerat numquam
+        aperiam consectetur autem ullam alias ratione voluptatibus inventore ea deleniti minima molestias rem, nihil
+        vero non quae architecto officia, porro eligendi natus dolorem? Quod, libero beatae nobis, provident dolore
+        eveniet sit voluptas labore in eius reiciendis nostrum dolorem.
+    </div>
+
+    <h3>2. Overflow: Hidden</h3>
+    <div id="overflow2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus doloribus quaerat numquam
+        aperiam consectetur autem ullam alias ratione voluptatibus inventore ea deleniti minima molestias rem, nihil
+        vero non quae architecto officia, porro eligendi natus dolorem? Quod, libero beatae nobis, provident dolore
+        eveniet sit voluptas labore in eius reiciendis nostrum dolorem.
+    </div>
+
+    <h3>3. Overflow: Scroll</h3>
+    <div id="overflow3">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus doloribus quaerat numquam
+        aperiam consectetur autem ullam alias ratione voluptatibus inventore ea deleniti minima molestias rem, nihil
+        vero non quae architecto officia, porro eligendi natus dolorem? Quod, libero beatae nobis, provident dolore
+        eveniet sit voluptas labore in eius reiciendis nostrum dolorem.
+    </div>
+
+    <h3>4. Overflow: Auto</h3>
+    <div id="overflow4">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus doloribus quaerat numquam
+        aperiam consectetur autem ullam alias ratione voluptatibus inventore ea deleniti minima molestias rem, nihil
+        vero non quae architecto officia, porro eligendi natus dolorem? Quod, libero beatae nobis, provident dolore
+        eveniet sit voluptas labore in eius reiciendis nostrum dolorem.
+    </div>
+
+    <h3>5. Overflow: Clip</h3>
+    <div id="overflow5">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus doloribus quaerat numquam
+        aperiam consectetur autem ullam alias ratione voluptatibus inventore ea deleniti minima molestias rem, nihil
+        vero non quae architecto officia, porro eligendi natus dolorem? Quod, libero beatae nobis, provident dolore
+        eveniet sit voluptas labore in eius reiciendis nostrum dolorem.
+    </div>
+
+    <div id="Fbox">
+        <span id="Fspan1">span1</span>
+        <span id="Fspan2">span2</span>
+        <div id="Fdiv">div</div>
+        <span id="Fspan3">span3</span>
+        <span id="Fspan4">span4</span>
+    </div>
+
+    <div id="container">
+        <div class="grid">grid1</div>
+        <div class="grid">grid2</div>
+        <div class="grid">grid3</div>
+        <div class="grid">grid4</div>
+        <div class="grid">grid5</div>
+        <div class="grid">grid6</div>
+    </div>
+</body>
+
+</html>
