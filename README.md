@@ -4,7 +4,7 @@ A beginner-friendly collection of fundamental CSS concepts, layout techniques, p
 
 ---
 
-## 📌 Topics Covered
+##  Topics Covered
 
 - **Basic Selectors & Styling**: Class selectors, ID selectors, typography, and color styling.
 - **CSS Positioning**: Demonstration of `static`, `relative`, `absolute`, `fixed`, and `sticky` positioning.
@@ -14,19 +14,12 @@ A beginner-friendly collection of fundamental CSS concepts, layout techniques, p
 
 ---
 
-## 📁 Directory Structure
 
-```text
-basic-CSS-page-for-beginner/
-├── src/
-│   ├── index.html    # Core HTML & CSS practice file
-│   └── mbp.jpg       # Margin, Border, & Padding Diagram Image
-└── README.md         # Project documentation
 ```
 
 ---
 
-## 💻 How to View
+##  How to View
 
 1. Clone or download the repository:
    ```bash
